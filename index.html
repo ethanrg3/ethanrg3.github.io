@@ -25,6 +25,14 @@
             text-align: center;
         }
 
+        header img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
         header h1 {
             margin-bottom: 10px;
         }
@@ -60,7 +68,7 @@
             margin-bottom: 20px;
         }
 
-        .projects .project-card {
+        .projects .project-card-2 {
             border: 1px solid #ddd;
             border-radius: 10px;
             padding: 20px;
@@ -112,52 +120,48 @@
             width: 100%;
         }
 
-        .social-icons a {
-            color: #fff;
-            margin: 0 10px;
+        .project-card {
             text-decoration: none;
-            font-size: 1.5em;
-            transition: color 0.3s;
-        }
-
-        .social-icons a:hover {
-            color: #FFD700;
+            color: #333;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Web Developer | Designer | Programmer</p>
+        <img src="IMG_9225.jpg" alt="">
+        <h1>Ethan Rodgers-Gates</h1>
+        <p>Junior @ University of Richmond | BS: Computer Science | Minor: Data Science and Statistics</p>
     </header>
 
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="https://www.linkedin.com/in/ethan-rodgers-gates/" target=""><i class="fab fa-linkedin"></i></a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vRje-NUhHhbuf5JDlGeX2_E64gJLemAXQOjJ5SJscA2NjlYs2D884WLUGkpOM-pYQ/pub">Resume</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="about" class="about">
         <h2>About Me</h2>
-        <img src="https://via.placeholder.com/150" alt="Profile Picture">
         <p>
-            I am a passionate web developer with a knack for building engaging, user-friendly websites. With a strong foundation in HTML, CSS, and JavaScript, I enjoy creating solutions that make a positive impact.
+            I am a dedicated computer science student with strong problem-solving skills and a collaborative mindset. I thrive in team environments, leveraging my technical expertise and creativity to develop innovative solutions and contribute effectively to shared goals. 
         </p>
     </section>
 
     <section id="projects" class="projects">
         <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Project One</h3>
-            <p>Description of your amazing project here. Highlight the tools and technologies used.</p>
-        </div>
-        <div class="project-card">
-            <h3>Project Two</h3>
-            <p>Description of another awesome project you completed.</p>
-        </div>
-        <div class="project-card">
-            <h3>Project Three</h3>
-            <p>A brief overview of a noteworthy project, including its impact and technologies used.</p>
+        <div class="project-card-2">
+        <a class="project-card" href = "https://github.com/cmsc240-f24/project-brianethan">
+            <h3>Restaurant Game API | Class Project</h3>
+            <p>C++, CROW API</p>
+            <p>The Restaurant Management API is a RESTful service for managing restaurants, their menus, and dishes. 
+                It allows users to perform CRUD operations on restaurants, assign and update menus, and manage individual dishes. Built with C++ and Crow, it supports features like JSON-based requests, persistence via file storage, and flexible menu management using optional fields for dynamic data handling. 
+                Ideal for applications requiring structured and scalable restaurant data management.</p>
+        </a>
+    </div>
+        <div class="project-card-2">
+            <h3>Office Euchre | Class Project</h3>
+            <p>Python</p>
+            <p>The Office Euchre showcases strong Object-Oriented Programming (OOP) fundamentals through its thoughtful design and implementation. The game features four core classes: Game, Deck, Card, and Player. Encapsulation is demonstrated by organizing attributes (e.g., Player’s hand, Deck’s play_cards) and related methods, ensuring modularity. 
+                Polymorphism is employed in Card with overridden comparison operators for card ranking. Inheritance-free, it emphasizes interaction between classes for game flow.</p>
         </div>
     </section>
 
@@ -172,12 +176,7 @@
     </section>
 
     <footer>
-        <div class="social-icons">
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2025 Ethan Rodgers-Gates. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
