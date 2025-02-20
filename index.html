@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Ethan Rodgers-Gates | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <style>
         * {
             box-sizing: border-box;
@@ -13,72 +15,101 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
             color: #333;
             line-height: 1.6;
+            background: #f4f4f9;
         }
 
         header {
-            background: #007BFF;
+            background: #14213d;
             color: #fff;
-            padding: 40px 0;
             text-align: center;
+            padding: 60px 0;
         }
 
         header img {
-            width: 160px;
-            height: 160px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
+            border: 4px solid #fca311;
             margin-bottom: 20px;
         }
 
         header h1 {
-            margin-bottom: 10px;
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.85;
         }
 
         nav {
-            background: #0056b3;
-            padding: 10px;
+            background: #1f2a48;
+            padding: 15px;
             text-align: center;
         }
 
         nav a {
-            color: #fff;
+            color: #fca311;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
+            margin: 0 20px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: color 0.3s ease;
         }
 
         nav a:hover {
-            color: #FFD700;
+            color: #ffffff;
         }
 
         section {
-            padding: 40px;
+            padding: 50px 20px;
             max-width: 1100px;
             margin: auto;
+            text-align: center;
         }
 
-        .about img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #14213d;
             margin-bottom: 20px;
         }
 
-        .projects .project-card-2 {
-            border: 1px solid #ddd;
+        .about p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .projects .project-card {
+            background: #ffffff;
             border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            text-align: left;
         }
 
         .projects .project-card:hover {
             transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #14213d;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            color: #555;
         }
 
         .contact form {
@@ -90,78 +121,86 @@
 
         .contact input, .contact textarea {
             margin: 10px 0;
-            padding: 10px;
+            padding: 12px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            font-size: 1em;
+            font-size: 1rem;
         }
 
         .contact button {
-            background: #007BFF;
+            background: #fca311;
             color: #fff;
             border: none;
-            padding: 12px;
+            padding: 14px;
             border-radius: 5px;
+            font-size: 1rem;
             cursor: pointer;
             transition: background 0.3s;
         }
 
         .contact button:hover {
-            background: #0056b3;
+            background: #e69500;
         }
 
         footer {
-            background: #333;
+            background: #14213d;
             color: #fff;
             text-align: center;
             padding: 20px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            margin-top: 40px;
         }
 
-        .project-card {
-            text-decoration: none;
-            color: #333;
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #fca311;
+            font-size: 1.4rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ffffff;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <img src="IMG_9225.jpg" alt="">
+        <img src="IMG_9225.jpg" alt="Ethan Rodgers-Gates">
         <h1>Ethan Rodgers-Gates</h1>
-        <p>Junior @ University of Richmond | BS: Computer Science | Minor: Data Science and Statistics</p>
+        <p>BS: Computer Science | Minor: Data Science & Statistics | University of Richmond</p>
     </header>
 
     <nav>
-        <a href="https://www.linkedin.com/in/ethan-rodgers-gates/" target=""><i class="fab fa-linkedin"></i></a>
-        <a href="https://docs.google.com/document/d/e/2PACX-1vRje-NUhHhbuf5JDlGeX2_E64gJLemAXQOjJ5SJscA2NjlYs2D884WLUGkpOM-pYQ/pub">Resume</a>
+        <a href="https://www.linkedin.com/in/ethan-rodgers-gates/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vRje-NUhHhbuf5JDlGeX2_E64gJLemAXQOjJ5SJscA2NjlYs2D884WLUGkpOM-pYQ/pub" target="_blank">Resume</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="about" class="about">
         <h2>About Me</h2>
         <p>
-            I am a dedicated computer science student with strong problem-solving skills and a collaborative mindset. I thrive in team environments, leveraging my technical expertise and creativity to develop innovative solutions and contribute effectively to shared goals. 
+            I am a dedicated computer science student with strong problem-solving skills and a collaborative mindset. I thrive in team environments, leveraging my technical expertise and creativity to develop innovative solutions and contribute effectively to shared goals.
         </p>
     </section>
 
     <section id="projects" class="projects">
         <h2>Projects</h2>
-        <div class="project-card-2">
-        <a class="project-card" href = "https://github.com/cmsc240-f24/project-brianethan">
+
+        <div class="project-card">
             <h3>Restaurant Game API | Class Project</h3>
-            <p>C++, CROW API</p>
-            <p>The Restaurant Management API is a RESTful service for managing restaurants, their menus, and dishes. 
-                It allows users to perform CRUD operations on restaurants, assign and update menus, and manage individual dishes. Built with C++ and Crow, it supports features like JSON-based requests, persistence via file storage, and flexible menu management using optional fields for dynamic data handling. 
-                Ideal for applications requiring structured and scalable restaurant data management.</p>
-        </a>
-    </div>
-        <div class="project-card-2">
+            <p><strong>Tech Stack:</strong> C++, CROW API</p>
+            <p>A RESTful service for managing restaurants, menus, and dishes, supporting CRUD operations, JSON-based requests, and dynamic data handling.</p>
+            <a href="https://github.com/cmsc240-f24/project-brianethan" target="_blank">View Project</a>
+        </div>
+
+        <div class="project-card">
             <h3>Office Euchre | Class Project</h3>
-            <p>Python</p>
-            <p>The Office Euchre showcases strong Object-Oriented Programming (OOP) fundamentals through its thoughtful design and implementation. The game features four core classes: Game, Deck, Card, and Player. Encapsulation is demonstrated by organizing attributes (e.g., Player’s hand, Deck’s play_cards) and related methods, ensuring modularity. 
-                Polymorphism is employed in Card with overridden comparison operators for card ranking. Inheritance-free, it emphasizes interaction between classes for game flow.</p>
+            <p><strong>Tech Stack:</strong> Python</p>
+            <p>A console-based Euchre game implementing OOP principles with four core classes (Game, Deck, Card, Player) and advanced polymorphism.</p>
         </div>
     </section>
 
@@ -177,6 +216,11 @@
 
     <footer>
         <p>&copy; 2025 Ethan Rodgers-Gates. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ethan-rodgers-gates/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:erodgersgates@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </footer>
+
 </body>
 </html>
